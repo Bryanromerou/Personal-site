@@ -1,3 +1,92 @@
 *{
-    background-color: aqua;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    line-height: 1.6;
+    overflow: hidden;
+}
+nav{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.445);
+    display: flex;
+    padding: 10px 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    margin: 20px;
+    padding: 20px;
+}
+i{
+    font-size: 20px;
+}
+
+a{
+    color: black;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scroll */
+    overflow-y: scroll; 
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+#about{
+    background-color: #d6fdd6;
+    flex-direction: row;
+}
+#projects{
+    background-color: #cdd6db;
+    flex-direction: row;
+}
+
+#leftSection{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#projectPreview{
+    width:800px;
+    height: auto;
+    content: url("../images/project1.png");
+}
+#previousExperience{
+    background-color: #d6d6fd;
+}
+#background{
+    background-color: #fdfdd6;
+}
+
+
+#individualProject{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
